@@ -184,6 +184,9 @@
       var alphabet, c, caseChanged, e, i, isNum, len, str,
         x = this;
 
+        // Force DEBUG mode.
+        BigNumber.DEBUG = true;
+
       // Enable constructor call without `new`.
       if (!(x instanceof BigNumber)) return new BigNumber(v, b);
 
